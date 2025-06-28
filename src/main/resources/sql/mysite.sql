@@ -113,7 +113,7 @@ CREATE TABLE `QRTZ_JOB_DETAILS`  (
 -- ----------------------------
 -- Records of qrtz_job_details
 -- ----------------------------
-INSERT INTO `QRTZ_JOB_DETAILS` VALUES ('quartzScheduler', 'refreshTheCache', 'DEFAULT', '任务描述：用于每五分钟刷新一次常用数据缓存', 'xyz.kuailemao.quartz.RefreshTheCache', '1', '0', '0', '0', 0xACED0005737200156F72672E71756172747A2E4A6F62446174614D61709FB083E8BFA9B0CB020000787200266F72672E71756172747A2E7574696C732E537472696E674B65794469727479466C61674D61708208E8C3FBC55D280200015A0013616C6C6F77735472616E7369656E74446174617872001D6F72672E71756172747A2E7574696C732E4469727479466C61674D617013E62EAD28760ACE0200025A000564697274794C00036D617074000F4C6A6176612F7574696C2F4D61703B787000737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F40000000000010770800000010000000007800);
+INSERT INTO `QRTZ_JOB_DETAILS` VALUES ('quartzScheduler', 'refreshTheCache', 'DEFAULT', '任务描述：用于每五分钟刷新一次常用数据缓存', 'xyz.hedx.quartz.RefreshTheCache', '1', '0', '0', '0', 0xACED0005737200156F72672E71756172747A2E4A6F62446174614D61709FB083E8BFA9B0CB020000787200266F72672E71756172747A2E7574696C732E537472696E674B65794469727479466C61674D61708208E8C3FBC55D280200015A0013616C6C6F77735472616E7369656E74446174617872001D6F72672E71756172747A2E7574696C732E4469727479466C61674D617013E62EAD28760ACE0200025A000564697274794C00036D617074000F4C6A6176612F7574696C2F4D61703B787000737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F40000000000010770800000010000000007800);
 
 -- ----------------------------
 -- Table structure for qrtz_locks
@@ -322,35 +322,35 @@ CREATE TABLE `sys_menu`  (
 -- ----------------------------
 -- Records of sys_menu
 -- ----------------------------
-INSERT INTO `sys_menu` VALUES (1, '系统管理', 'SettingTwoTone', '/system', 'RouteView', '/system/menu', 0, NULL, 'System', 0, NULL, 1, 0, 1, NULL, 0, 2, '2023-11-17 14:49:02', '2023-11-29 17:33:13', 0);
-INSERT INTO `sys_menu` VALUES (2, '菜单管理', 'MenuOutlined', '/system/menu', '/system/menu', '', 0, 1, 'Menu', 0, NULL, 1, 0, 1, NULL, 0, 1, '2023-11-17 14:49:02', '2023-11-28 17:27:43', 0);
-INSERT INTO `sys_menu` VALUES (3, '用户管理', 'UserOutlined', '/system/user', '/system/user', '', 0, 1, 'User', 0, NULL, 1, 0, 1, NULL, 0, 0, '2023-11-17 14:49:02', '2023-11-29 14:46:27', 0);
-INSERT INTO `sys_menu` VALUES (21, '首页', 'HomeTwoTone', '/welcome', '/welcome', '', 0, NULL, NULL, 0, NULL, 1, 1, 1, '', 0, 0, '2023-11-28 16:36:33', '2023-11-28 19:57:13', 0);
-INSERT INTO `sys_menu` VALUES (23, '角色管理', 'TeamOutlined', '/system/role', '/system/role', NULL, 0, 1, NULL, 0, NULL, 1, 1, 1, '', 0, 3, '2023-11-29 15:41:30', '2023-12-04 12:16:00', 0);
-INSERT INTO `sys_menu` VALUES (24, '权限管理', 'UnlockOutlined', '/system/permission', '/system/permission', '', 0, 1, NULL, 0, NULL, 1, 1, 1, '', 0, 4, '2023-11-29 17:13:50', '2023-11-29 17:14:10', 0);
-INSERT INTO `sys_menu` VALUES (25, '日志管理', 'HighlightOutlined', '/log', 'RouteView', '/log/operate', 0, 1, NULL, 0, '', 1, 1, 1, '', 0, 5, '2023-11-29 17:17:29', '2023-11-29 17:17:29', 0);
-INSERT INTO `sys_menu` VALUES (26, '操作日志', 'FileProtectOutlined', '/log/operate', '/system/log/operate', '', 0, 25, NULL, 0, NULL, 1, 1, 1, '', 0, 0, '2023-11-29 17:20:28', '2023-11-29 17:29:20', 0);
-INSERT INTO `sys_menu` VALUES (27, '登录日志', 'SolutionOutlined', '/log/login', '/system/log/login', '', 0, 25, NULL, 0, '', 1, 1, 1, '', 0, 1, '2023-11-29 17:29:02', '2023-11-29 17:29:02', 0);
-INSERT INTO `sys_menu` VALUES (28, '网站管理', 'AppstoreTwoTone', '/blog', 'RouteView', NULL, 0, NULL, NULL, 0, NULL, 1, 1, 1, '', 0, 1, '2023-11-29 17:34:17', '2023-12-25 23:50:05', 0);
-INSERT INTO `sys_menu` VALUES (29, '信息管理', 'ReadOutlined', '/blog/info', '/blog/info', '', 0, 28, NULL, 0, NULL, 1, 1, 1, '', 0, 0, '2023-11-29 20:05:20', '2023-11-29 20:09:38', 0);
-INSERT INTO `sys_menu` VALUES (30, '文章管理', 'FormOutlined', '/blog/essay', '', NULL, 0, 28, NULL, 0, NULL, 1, 1, 1, '', 0, 0, '2023-11-29 20:11:25', '2023-12-26 11:16:20', 0);
-INSERT INTO `sys_menu` VALUES (31, '发布文章', 'SendOutlined', '/blog/essay/publish', '/blog/essay/publish', '', 0, 30, NULL, 0, '', 1, 1, 1, '', 0, 0, '2023-11-29 20:13:00', '2023-11-29 20:13:00', 0);
-INSERT INTO `sys_menu` VALUES (32, '文章列表', 'OrderedListOutlined', '/blog/essay/list', '/blog/essay/list', '', 0, 30, NULL, 0, '', 1, 1, 1, '', 0, 0, '2023-11-29 20:14:13', '2023-11-29 20:14:13', 0);
-INSERT INTO `sys_menu` VALUES (33, '标签管理', 'TagsOutlined', '/blog/tag', '/blog/tag', '', 0, 28, NULL, 0, NULL, 1, 1, 1, '', 0, 2, '2023-11-29 20:15:13', '2023-11-29 20:20:28', 0);
-INSERT INTO `sys_menu` VALUES (34, '分类管理', 'ContainerOutlined', '/blog/category', '/blog/category', '', 0, 28, NULL, 0, '', 1, 1, 1, '', 0, 3, '2023-11-29 20:19:09', '2023-11-29 20:19:09', 0);
-INSERT INTO `sys_menu` VALUES (35, '评论管理', 'CommentOutlined', '/blog/comment', '/blog/comment', '', 0, 28, NULL, 0, NULL, 1, 1, 1, '', 0, 4, '2023-11-29 20:21:48', '2023-11-29 20:22:06', 0);
-INSERT INTO `sys_menu` VALUES (36, '留言管理', 'ScheduleOutlined', '/blog/message', '/blog/message', NULL, 0, 28, NULL, 0, NULL, 1, 1, 1, '', 0, 1, '2023-11-29 20:23:19', '2023-12-26 11:16:24', 0);
-INSERT INTO `sys_menu` VALUES (37, '树洞管理', 'BulbOutlined', '/blog/tree-hole', '/blog/tree-hole', '', 0, 28, NULL, 0, '', 1, 1, 1, '', 0, 5, '2023-11-29 20:27:40', '2023-11-29 20:27:40', 0);
-INSERT INTO `sys_menu` VALUES (38, '聊天管理', 'RobotOutlined', '/blog/gpt', '/blog/gpt', '', 0, 28, NULL, 0, NULL, 1, 1, 1, '', 0, 6, '2023-11-29 20:29:08', '2023-11-29 20:29:27', 0);
-INSERT INTO `sys_menu` VALUES (39, '友链管理', 'NodeIndexOutlined', '/blog/link', '/blog/link', NULL, 0, 28, NULL, 0, NULL, 1, 1, 1, '', 0, 6, '2023-11-29 20:31:25', '2024-01-22 20:27:26', 0);
-INSERT INTO `sys_menu` VALUES (42, '数据大屏', 'PieChartTwoTone', '/data-screen', '/data-screen', NULL, 0, NULL, NULL, 1, NULL, 1, 1, 1, '', 0, 4, '2023-11-29 20:51:14', '2024-01-22 22:07:04', 0);
-INSERT INTO `sys_menu` VALUES (43, '收藏管理', 'InboxOutlined', '/blog/collect', '/blog/collect', NULL, 0, 28, NULL, 0, NULL, 1, 1, 1, '', 0, 3, '2023-11-29 20:54:15', '2023-11-29 20:54:47', 0);
-INSERT INTO `sys_menu` VALUES (44, '服务监控', 'AlertOutlined', '/system/server-monitoring', '/system/server-monitoring', NULL, 0, 1, NULL, 0, NULL, 1, 1, 1, '', 0, 6, '2023-11-29 21:01:24', '2023-12-14 15:26:34', 0);
-INSERT INTO `sys_menu` VALUES (64, '角色授权', '', '/role/authorization', '/system/role/user-role', NULL, 0, 1, NULL, 1, NULL, 1, 1, 1, '', 0, 0, '2023-12-04 12:07:00', '2023-12-05 09:57:09', 0);
-INSERT INTO `sys_menu` VALUES (65, '权限授权', '', '/permission/authorization', '/system/permission/role-permission', NULL, 0, 1, NULL, 1, NULL, 1, 1, 1, '', 0, 0, '2023-12-07 14:38:45', '2023-12-07 14:41:44', 0);
-INSERT INTO `sys_menu` VALUES (68, '用户授权', '', '/user/role', '/system/user/role-user', NULL, 0, 1, NULL, 1, NULL, 1, 1, 1, '', 0, 0, '2023-12-19 10:37:05', '2023-12-19 10:38:16', 0);
-INSERT INTO `sys_menu` VALUES (69, '接口文档', 'FileTextTwoTone', 'http://blog.kuailemao.xyz/doc.html#/home', NULL, NULL, 0, NULL, NULL, 0, 'http://127.0.0.1:8088/doc.html#/home', 1, 1, 1, '_blank', 0, 5, '2024-01-22 20:32:18', '2024-02-28 14:03:19', 0);
-INSERT INTO `sys_menu` VALUES (70, '跳转前台', 'TabletTwoTone', 'http://blog.kuailemao.xyz', NULL, NULL, 0, NULL, NULL, 0, '', 1, 1, 1, '_blank', 0, 6, '2024-01-22 20:38:54', '2024-02-28 14:02:45', 0);
+INSERT INTO `sys_menu` VALUES (1, '系统管理', 'SettingTwoTone', '/system', 'RouteView', '/system/menu', 0, NULL, 'System', 0, NULL, 1, 0, 1, NULL, 0, 2, '2024-11-17 14:49:02', '2024-11-29 17:33:13', 0);
+INSERT INTO `sys_menu` VALUES (2, '菜单管理', 'MenuOutlined', '/system/menu', '/system/menu', '', 0, 1, 'Menu', 0, NULL, 1, 0, 1, NULL, 0, 1, '2024-11-17 14:49:02', '2024-11-28 17:27:43', 0);
+INSERT INTO `sys_menu` VALUES (3, '用户管理', 'UserOutlined', '/system/user', '/system/user', '', 0, 1, 'User', 0, NULL, 1, 0, 1, NULL, 0, 0, '2024-11-17 14:49:02', '2024-11-29 14:46:27', 0);
+INSERT INTO `sys_menu` VALUES (21, '首页', 'HomeTwoTone', '/welcome', '/welcome', '', 0, NULL, NULL, 0, NULL, 1, 1, 1, '', 0, 0, '2024-11-28 16:36:33', '2024-11-28 19:57:13', 0);
+INSERT INTO `sys_menu` VALUES (23, '角色管理', 'TeamOutlined', '/system/role', '/system/role', NULL, 0, 1, NULL, 0, NULL, 1, 1, 1, '', 0, 3, '2024-11-29 15:41:30', '2024-12-04 12:16:00', 0);
+INSERT INTO `sys_menu` VALUES (24, '权限管理', 'UnlockOutlined', '/system/permission', '/system/permission', '', 0, 1, NULL, 0, NULL, 1, 1, 1, '', 0, 4, '2024-11-29 17:13:50', '2024-11-29 17:14:10', 0);
+INSERT INTO `sys_menu` VALUES (25, '日志管理', 'HighlightOutlined', '/log', 'RouteView', '/log/operate', 0, 1, NULL, 0, '', 1, 1, 1, '', 0, 5, '2024-11-29 17:17:29', '2024-11-29 17:17:29', 0);
+INSERT INTO `sys_menu` VALUES (26, '操作日志', 'FileProtectOutlined', '/log/operate', '/system/log/operate', '', 0, 25, NULL, 0, NULL, 1, 1, 1, '', 0, 0, '2024-11-29 17:20:28', '2024-11-29 17:29:20', 0);
+INSERT INTO `sys_menu` VALUES (27, '登录日志', 'SolutionOutlined', '/log/login', '/system/log/login', '', 0, 25, NULL, 0, '', 1, 1, 1, '', 0, 1, '2024-11-29 17:29:02', '2024-11-29 17:29:02', 0);
+INSERT INTO `sys_menu` VALUES (28, '网站管理', 'AppstoreTwoTone', '/blog', 'RouteView', NULL, 0, NULL, NULL, 0, NULL, 1, 1, 1, '', 0, 1, '2024-11-29 17:34:17', '2024-12-25 23:50:05', 0);
+INSERT INTO `sys_menu` VALUES (29, '信息管理', 'ReadOutlined', '/blog/info', '/blog/info', '', 0, 28, NULL, 0, NULL, 1, 1, 1, '', 0, 0, '2024-11-29 20:05:20', '2024-11-29 20:09:38', 0);
+INSERT INTO `sys_menu` VALUES (30, '文章管理', 'FormOutlined', '/blog/essay', '', NULL, 0, 28, NULL, 0, NULL, 1, 1, 1, '', 0, 0, '2024-11-29 20:11:25', '2024-12-26 11:16:20', 0);
+INSERT INTO `sys_menu` VALUES (31, '发布文章', 'SendOutlined', '/blog/essay/publish', '/blog/essay/publish', '', 0, 30, NULL, 0, '', 1, 1, 1, '', 0, 0, '2024-11-29 20:13:00', '2024-11-29 20:13:00', 0);
+INSERT INTO `sys_menu` VALUES (32, '文章列表', 'OrderedListOutlined', '/blog/essay/list', '/blog/essay/list', '', 0, 30, NULL, 0, '', 1, 1, 1, '', 0, 0, '2024-11-29 20:14:13', '2024-11-29 20:14:13', 0);
+INSERT INTO `sys_menu` VALUES (33, '标签管理', 'TagsOutlined', '/blog/tag', '/blog/tag', '', 0, 28, NULL, 0, NULL, 1, 1, 1, '', 0, 2, '2024-11-29 20:15:13', '2024-11-29 20:20:28', 0);
+INSERT INTO `sys_menu` VALUES (34, '分类管理', 'ContainerOutlined', '/blog/category', '/blog/category', '', 0, 28, NULL, 0, '', 1, 1, 1, '', 0, 3, '2024-11-29 20:19:09', '2024-11-29 20:19:09', 0);
+INSERT INTO `sys_menu` VALUES (35, '评论管理', 'CommentOutlined', '/blog/comment', '/blog/comment', '', 0, 28, NULL, 0, NULL, 1, 1, 1, '', 0, 4, '2024-11-29 20:21:48', '2024-11-29 20:22:06', 0);
+INSERT INTO `sys_menu` VALUES (36, '留言管理', 'ScheduleOutlined', '/blog/message', '/blog/message', NULL, 0, 28, NULL, 0, NULL, 1, 1, 1, '', 0, 1, '2024-11-29 20:23:19', '2024-12-26 11:16:24', 0);
+INSERT INTO `sys_menu` VALUES (37, '树洞管理', 'BulbOutlined', '/blog/tree-hole', '/blog/tree-hole', '', 0, 28, NULL, 0, '', 1, 1, 1, '', 0, 5, '2024-11-29 20:27:40', '2024-11-29 20:27:40', 0);
+INSERT INTO `sys_menu` VALUES (38, '聊天管理', 'RobotOutlined', '/blog/gpt', '/blog/gpt', '', 0, 28, NULL, 0, NULL, 1, 1, 1, '', 0, 6, '2024-11-29 20:29:08', '2024-11-29 20:29:27', 0);
+INSERT INTO `sys_menu` VALUES (39, '友链管理', 'NodeIndexOutlined', '/blog/link', '/blog/link', NULL, 0, 28, NULL, 0, NULL, 1, 1, 1, '', 0, 6, '2024-11-29 20:31:25', '2024-01-22 20:27:26', 0);
+INSERT INTO `sys_menu` VALUES (42, '数据大屏', 'PieChartTwoTone', '/data-screen', '/data-screen', NULL, 0, NULL, NULL, 1, NULL, 1, 1, 1, '', 0, 4, '2024-11-29 20:51:14', '2024-01-22 22:07:04', 0);
+INSERT INTO `sys_menu` VALUES (43, '收藏管理', 'InboxOutlined', '/blog/collect', '/blog/collect', NULL, 0, 28, NULL, 0, NULL, 1, 1, 1, '', 0, 3, '2024-11-29 20:54:15', '2024-11-29 20:54:47', 0);
+INSERT INTO `sys_menu` VALUES (44, '服务监控', 'AlertOutlined', '/system/server-monitoring', '/system/server-monitoring', NULL, 0, 1, NULL, 0, NULL, 1, 1, 1, '', 0, 6, '2024-11-29 21:01:24', '2024-12-14 15:26:34', 0);
+INSERT INTO `sys_menu` VALUES (64, '角色授权', '', '/role/authorization', '/system/role/user-role', NULL, 0, 1, NULL, 1, NULL, 1, 1, 1, '', 0, 0, '2024-12-04 12:07:00', '2024-12-05 09:57:09', 0);
+INSERT INTO `sys_menu` VALUES (65, '权限授权', '', '/permission/authorization', '/system/permission/role-permission', NULL, 0, 1, NULL, 1, NULL, 1, 1, 1, '', 0, 0, '2024-12-07 14:38:45', '2024-12-07 14:41:44', 0);
+INSERT INTO `sys_menu` VALUES (68, '用户授权', '', '/user/role', '/system/user/role-user', NULL, 0, 1, NULL, 1, NULL, 1, 1, 1, '', 0, 0, '2024-12-19 10:37:05', '2024-12-19 10:38:16', 0);
+INSERT INTO `sys_menu` VALUES (69, '接口文档', 'FileTextTwoTone', 'http://blog.hedx.xyz/doc.html#/home', NULL, NULL, 0, NULL, NULL, 0, 'http://127.0.0.1:8088/doc.html#/home', 1, 1, 1, '_blank', 0, 5, '2024-01-22 20:32:18', '2024-02-28 14:03:19', 0);
+INSERT INTO `sys_menu` VALUES (70, '跳转前台', 'TabletTwoTone', 'http://blog.hedx.xyz', NULL, NULL, 0, NULL, NULL, 0, '', 1, 1, 1, '_blank', 0, 6, '2024-01-22 20:38:54', '2024-02-28 14:02:45', 0);
 
 -- ----------------------------
 -- Table structure for sys_permission
@@ -370,60 +370,60 @@ CREATE TABLE `sys_permission`  (
 -- ----------------------------
 -- Records of sys_permission
 -- ----------------------------
-INSERT INTO `sys_permission` VALUES (5, '获取菜单', 'system:menu:list', 2, '2023-12-06 08:41:49', '2023-12-14 17:21:57', 0);
-INSERT INTO `sys_permission` VALUES (6, '查询菜单', 'system:menu:select', 2, '2023-12-05 08:41:54', '2023-12-07 12:02:31', 0);
-INSERT INTO `sys_permission` VALUES (7, '修改菜单', 'system:menu:update', 2, '2023-12-04 08:41:54', '2023-12-12 20:36:49', 0);
-INSERT INTO `sys_permission` VALUES (8, '删除菜单', 'system:menu:delete', 2, '2023-12-04 08:41:54', '2023-12-11 21:03:10', 0);
-INSERT INTO `sys_permission` VALUES (9, '添加菜单', 'system:menu:add', 2, '2023-12-02 08:41:54', '2023-12-04 08:41:54', 0);
-INSERT INTO `sys_permission` VALUES (10, '修改菜单角色列表', 'system:menu:role:list', 2, '2023-12-02 08:41:54', '2023-12-02 08:41:54', 0);
-INSERT INTO `sys_permission` VALUES (11, '获取所有角色', 'system:role:list', 23, '2023-12-02 08:41:54', '2023-12-02 08:41:54', 0);
-INSERT INTO `sys_permission` VALUES (12, '更新角色状态', 'system:role:status:update', 23, '2023-12-02 08:41:54', '2023-12-02 08:41:54', 0);
-INSERT INTO `sys_permission` VALUES (13, '获取对应角色信息', 'system:role:get', 23, '2023-12-02 08:41:54', '2023-12-02 08:41:54', 0);
-INSERT INTO `sys_permission` VALUES (14, '修改角色信息', 'system:role:update', 23, '2023-12-02 08:41:54', '2023-12-02 08:41:54', 0);
-INSERT INTO `sys_permission` VALUES (15, '根据id删除角色', 'system:role:delete', 23, '2023-12-02 08:41:54', '2023-12-02 08:41:54', 0);
-INSERT INTO `sys_permission` VALUES (16, '根据条件搜索角色', 'system:role:search', 23, '2023-12-02 08:41:54', '2023-12-02 08:41:54', 0);
-INSERT INTO `sys_permission` VALUES (17, '查询拥有角色的用户列表', 'system:user:role:list', 23, '2023-12-02 08:41:54', '2023-12-02 08:41:54', 0);
-INSERT INTO `sys_permission` VALUES (18, '查询未拥有角色的用户列表', 'system:not:role:user:list', 23, '2023-12-02 08:41:54', '2023-12-06 10:43:49', 0);
-INSERT INTO `sys_permission` VALUES (19, '添加用户角色关系', 'system:user:role:add', 23, '2023-12-05 08:41:54', '2023-12-11 21:02:51', 0);
-INSERT INTO `sys_permission` VALUES (20, '删除用户角色关系', 'system:user:role:delete', 23, '2023-12-02 08:41:54', '2023-12-02 08:41:54', 0);
-INSERT INTO `sys_permission` VALUES (21, '所有权限', 'system:permission:list', 24, '2023-12-06 10:34:21', '2023-12-06 10:34:24', 0);
-INSERT INTO `sys_permission` VALUES (22, '查询所有权限所在菜单', 'system:permission:menu:list', 24, '2023-12-06 14:26:28', '2023-12-06 14:26:31', 0);
-INSERT INTO `sys_permission` VALUES (23, '搜索权限', 'system:permission:search', 24, '2023-12-06 15:18:29', '2023-12-06 15:18:33', 0);
-INSERT INTO `sys_permission` VALUES (24, '添加权限', 'system:permission:add', 24, '2023-12-06 19:12:47', '2023-12-06 19:12:50', 0);
-INSERT INTO `sys_permission` VALUES (25, '测试测试', 'sdss', 3, '2023-12-06 20:26:46', '2023-12-06 20:26:46', 1);
-INSERT INTO `sys_permission` VALUES (26, 'sdsd', 'sdd', 26, '2023-12-06 20:29:24', '2023-12-06 20:29:24', 1);
-INSERT INTO `sys_permission` VALUES (27, '获取要修改的权限信息', 'system:permission:get', 24, '2023-12-06 20:48:33', '2023-12-06 20:48:33', 0);
-INSERT INTO `sys_permission` VALUES (28, '修改权限字符信息', 'system:permission:update', 24, '2023-12-07 12:01:34', '2023-12-07 12:01:36', 0);
-INSERT INTO `sys_permission` VALUES (29, 'sss', '测试', 21, '2023-12-07 12:06:26', '2023-12-07 12:06:26', 1);
-INSERT INTO `sys_permission` VALUES (30, '删除权限', 'system:permission:delete', 24, '2023-12-07 12:14:14', '2023-12-07 12:14:14', 0);
-INSERT INTO `sys_permission` VALUES (31, '查询权限的角色列表', 'system:permission:role:list', 65, '2023-12-07 15:02:03', '2023-12-07 15:02:03', 0);
-INSERT INTO `sys_permission` VALUES (32, '2121', '测试', 26, '2023-12-07 17:17:13', '2023-12-07 17:17:13', 1);
-INSERT INTO `sys_permission` VALUES (33, '查询没有该权限的角色列表', 'system:permission:role:not:list', 65, '2023-12-07 17:41:38', '2023-12-07 17:41:38', 0);
-INSERT INTO `sys_permission` VALUES (34, '单个/批量添加角色权限关系', 'system:permission:role:add', 65, '2023-12-07 20:53:14', '2023-12-08 10:51:10', 0);
-INSERT INTO `sys_permission` VALUES (35, '删除角色权限关系', 'system:permission:role:delete', 65, '2023-12-07 21:00:55', '2023-12-07 21:00:55', 0);
-INSERT INTO `sys_permission` VALUES (36, '显示所有登录日志', 'system:log:login:list', 27, '2023-12-11 16:20:00', '2023-12-14 17:48:07', 0);
-INSERT INTO `sys_permission` VALUES (37, '登录日志搜索', 'system:log:login:search', 27, '2023-12-11 19:51:27', '2023-12-11 19:51:27', 0);
-INSERT INTO `sys_permission` VALUES (38, '删除/清空登录日志', 'system:log:login:delete', 27, '2023-12-11 20:19:08', '2023-12-11 20:19:08', 0);
-INSERT INTO `sys_permission` VALUES (45, '显示所有操作日志', 'system:log:list', 26, '2023-12-13 16:13:41', '2023-12-13 16:13:41', 0);
-INSERT INTO `sys_permission` VALUES (46, '显示所有操作日志', 'system:log:list', 26, '2023-12-13 16:13:41', '2023-12-13 16:13:41', 1);
-INSERT INTO `sys_permission` VALUES (87, '添加角色信息', 'system:role:add', 23, '2023-12-13 17:23:42', '2023-12-13 17:23:42', 0);
-INSERT INTO `sys_permission` VALUES (88, '添加角色信息', 'system:role:add', 23, '2023-12-13 17:23:42', '2023-12-13 17:23:42', 1);
-INSERT INTO `sys_permission` VALUES (91, '搜索操作日志', 'system:log:search', 26, '2023-12-13 20:43:04', '2023-12-13 20:43:04', 0);
-INSERT INTO `sys_permission` VALUES (92, '删除/清空操作日志', 'system:log:delete', 26, '2023-12-14 08:45:38', '2023-12-14 08:45:38', 0);
-INSERT INTO `sys_permission` VALUES (93, 'id查询操作日志', 'system:log:select:id', 26, '2023-12-14 09:00:53', '2023-12-14 09:00:53', 0);
-INSERT INTO `sys_permission` VALUES (94, '获取服务监控数据', 'monitor:server:list', 44, '2023-12-14 15:21:21', '2023-12-14 15:21:21', 0);
-INSERT INTO `sys_permission` VALUES (95, 'ssss', 'system:menu:list	', 26, '2023-12-14 17:19:50', '2023-12-14 17:19:50', 1);
-INSERT INTO `sys_permission` VALUES (96, 'dd', 'system:menu:lists', 21, '2023-12-14 17:21:46', '2023-12-14 17:21:46', 1);
-INSERT INTO `sys_permission` VALUES (97, '获取用户列表', 'system:user:list', 3, '2023-12-18 12:07:00', '2023-12-18 12:07:00', 0);
-INSERT INTO `sys_permission` VALUES (98, '搜索用户列表', 'system:user:search', 3, '2023-12-18 14:15:46', '2023-12-18 14:15:46', 0);
-INSERT INTO `sys_permission` VALUES (99, '更新用户状态', 'system:user:status:update', 3, '2023-12-18 15:11:34', '2023-12-18 15:11:34', 0);
-INSERT INTO `sys_permission` VALUES (100, '获取用户详细信息', 'system:user:details', 3, '2023-12-18 16:40:52', '2023-12-18 16:40:52', 0);
-INSERT INTO `sys_permission` VALUES (101, '删除用户&用户角色关系', 'system:user:delete', 3, '2023-12-19 10:11:46', '2023-12-19 10:12:15', 0);
-INSERT INTO `sys_permission` VALUES (102, '查询没有该用户的角色列表', 'system:user:role:not:list', 23, '2023-12-19 11:10:11', '2023-12-19 11:10:11', 0);
-INSERT INTO `sys_permission` VALUES (103, '查询拥有用户的角色列表', 'system:role:user:list', 23, '2023-12-19 11:17:55', '2023-12-19 11:17:55', 0);
-INSERT INTO `sys_permission` VALUES (104, '搜索管理菜单列表', 'system:search:menu:list', 2, '2023-12-25 11:48:02', '2023-12-25 11:48:02', 0);
-INSERT INTO `sys_permission` VALUES (105, '添加或修改站长信息', 'blog:update:websiteInfo', 29, '2023-12-27 16:19:23', '2024-01-04 10:49:12', 0);
-INSERT INTO `sys_permission` VALUES (106, '查看网站信息-后台', 'blog:get:websiteInfo', 29, '2023-12-29 08:52:51', '2024-01-22 22:18:56', 0);
+INSERT INTO `sys_permission` VALUES (5, '获取菜单', 'system:menu:list', 2, '2024-12-06 08:41:49', '2024-12-14 17:21:57', 0);
+INSERT INTO `sys_permission` VALUES (6, '查询菜单', 'system:menu:select', 2, '2024-12-05 08:41:54', '2024-12-07 12:02:31', 0);
+INSERT INTO `sys_permission` VALUES (7, '修改菜单', 'system:menu:update', 2, '2024-12-04 08:41:54', '2024-12-12 20:36:49', 0);
+INSERT INTO `sys_permission` VALUES (8, '删除菜单', 'system:menu:delete', 2, '2024-12-04 08:41:54', '2024-12-11 21:03:10', 0);
+INSERT INTO `sys_permission` VALUES (9, '添加菜单', 'system:menu:add', 2, '2024-12-02 08:41:54', '2024-12-04 08:41:54', 0);
+INSERT INTO `sys_permission` VALUES (10, '修改菜单角色列表', 'system:menu:role:list', 2, '2024-12-02 08:41:54', '2024-12-02 08:41:54', 0);
+INSERT INTO `sys_permission` VALUES (11, '获取所有角色', 'system:role:list', 23, '2024-12-02 08:41:54', '2024-12-02 08:41:54', 0);
+INSERT INTO `sys_permission` VALUES (12, '更新角色状态', 'system:role:status:update', 23, '2024-12-02 08:41:54', '2024-12-02 08:41:54', 0);
+INSERT INTO `sys_permission` VALUES (13, '获取对应角色信息', 'system:role:get', 23, '2024-12-02 08:41:54', '2024-12-02 08:41:54', 0);
+INSERT INTO `sys_permission` VALUES (14, '修改角色信息', 'system:role:update', 23, '2024-12-02 08:41:54', '2024-12-02 08:41:54', 0);
+INSERT INTO `sys_permission` VALUES (15, '根据id删除角色', 'system:role:delete', 23, '2024-12-02 08:41:54', '2024-12-02 08:41:54', 0);
+INSERT INTO `sys_permission` VALUES (16, '根据条件搜索角色', 'system:role:search', 23, '2024-12-02 08:41:54', '2024-12-02 08:41:54', 0);
+INSERT INTO `sys_permission` VALUES (17, '查询拥有角色的用户列表', 'system:user:role:list', 23, '2024-12-02 08:41:54', '2024-12-02 08:41:54', 0);
+INSERT INTO `sys_permission` VALUES (18, '查询未拥有角色的用户列表', 'system:not:role:user:list', 23, '2024-12-02 08:41:54', '2024-12-06 10:43:49', 0);
+INSERT INTO `sys_permission` VALUES (19, '添加用户角色关系', 'system:user:role:add', 23, '2024-12-05 08:41:54', '2024-12-11 21:02:51', 0);
+INSERT INTO `sys_permission` VALUES (20, '删除用户角色关系', 'system:user:role:delete', 23, '2024-12-02 08:41:54', '2024-12-02 08:41:54', 0);
+INSERT INTO `sys_permission` VALUES (21, '所有权限', 'system:permission:list', 24, '2024-12-06 10:34:21', '2024-12-06 10:34:24', 0);
+INSERT INTO `sys_permission` VALUES (22, '查询所有权限所在菜单', 'system:permission:menu:list', 24, '2024-12-06 14:26:28', '2024-12-06 14:26:31', 0);
+INSERT INTO `sys_permission` VALUES (23, '搜索权限', 'system:permission:search', 24, '2024-12-06 15:18:29', '2024-12-06 15:18:33', 0);
+INSERT INTO `sys_permission` VALUES (24, '添加权限', 'system:permission:add', 24, '2024-12-06 19:12:47', '2024-12-06 19:12:50', 0);
+INSERT INTO `sys_permission` VALUES (25, '测试测试', 'sdss', 3, '2024-12-06 20:26:46', '2024-12-06 20:26:46', 1);
+INSERT INTO `sys_permission` VALUES (26, 'sdsd', 'sdd', 26, '2024-12-06 20:29:24', '2024-12-06 20:29:24', 1);
+INSERT INTO `sys_permission` VALUES (27, '获取要修改的权限信息', 'system:permission:get', 24, '2024-12-06 20:48:33', '2024-12-06 20:48:33', 0);
+INSERT INTO `sys_permission` VALUES (28, '修改权限字符信息', 'system:permission:update', 24, '2024-12-07 12:01:34', '2024-12-07 12:01:36', 0);
+INSERT INTO `sys_permission` VALUES (29, 'sss', '测试', 21, '2024-12-07 12:06:26', '2024-12-07 12:06:26', 1);
+INSERT INTO `sys_permission` VALUES (30, '删除权限', 'system:permission:delete', 24, '2024-12-07 12:14:14', '2024-12-07 12:14:14', 0);
+INSERT INTO `sys_permission` VALUES (31, '查询权限的角色列表', 'system:permission:role:list', 65, '2024-12-07 15:02:03', '2024-12-07 15:02:03', 0);
+INSERT INTO `sys_permission` VALUES (32, '2121', '测试', 26, '2024-12-07 17:17:13', '2024-12-07 17:17:13', 1);
+INSERT INTO `sys_permission` VALUES (33, '查询没有该权限的角色列表', 'system:permission:role:not:list', 65, '2024-12-07 17:41:38', '2024-12-07 17:41:38', 0);
+INSERT INTO `sys_permission` VALUES (34, '单个/批量添加角色权限关系', 'system:permission:role:add', 65, '2024-12-07 20:53:14', '2024-12-08 10:51:10', 0);
+INSERT INTO `sys_permission` VALUES (35, '删除角色权限关系', 'system:permission:role:delete', 65, '2024-12-07 21:00:55', '2024-12-07 21:00:55', 0);
+INSERT INTO `sys_permission` VALUES (36, '显示所有登录日志', 'system:log:login:list', 27, '2024-12-11 16:20:00', '2024-12-14 17:48:07', 0);
+INSERT INTO `sys_permission` VALUES (37, '登录日志搜索', 'system:log:login:search', 27, '2024-12-11 19:51:27', '2024-12-11 19:51:27', 0);
+INSERT INTO `sys_permission` VALUES (38, '删除/清空登录日志', 'system:log:login:delete', 27, '2024-12-11 20:19:08', '2024-12-11 20:19:08', 0);
+INSERT INTO `sys_permission` VALUES (45, '显示所有操作日志', 'system:log:list', 26, '2024-12-13 16:13:41', '2024-12-13 16:13:41', 0);
+INSERT INTO `sys_permission` VALUES (46, '显示所有操作日志', 'system:log:list', 26, '2024-12-13 16:13:41', '2024-12-13 16:13:41', 1);
+INSERT INTO `sys_permission` VALUES (87, '添加角色信息', 'system:role:add', 23, '2024-12-13 17:23:42', '2024-12-13 17:23:42', 0);
+INSERT INTO `sys_permission` VALUES (88, '添加角色信息', 'system:role:add', 23, '2024-12-13 17:23:42', '2024-12-13 17:23:42', 1);
+INSERT INTO `sys_permission` VALUES (91, '搜索操作日志', 'system:log:search', 26, '2024-12-13 20:43:04', '2024-12-13 20:43:04', 0);
+INSERT INTO `sys_permission` VALUES (92, '删除/清空操作日志', 'system:log:delete', 26, '2024-12-14 08:45:38', '2024-12-14 08:45:38', 0);
+INSERT INTO `sys_permission` VALUES (93, 'id查询操作日志', 'system:log:select:id', 26, '2024-12-14 09:00:53', '2024-12-14 09:00:53', 0);
+INSERT INTO `sys_permission` VALUES (94, '获取服务监控数据', 'monitor:server:list', 44, '2024-12-14 15:21:21', '2024-12-14 15:21:21', 0);
+INSERT INTO `sys_permission` VALUES (95, 'ssss', 'system:menu:list	', 26, '2024-12-14 17:19:50', '2024-12-14 17:19:50', 1);
+INSERT INTO `sys_permission` VALUES (96, 'dd', 'system:menu:lists', 21, '2024-12-14 17:21:46', '2024-12-14 17:21:46', 1);
+INSERT INTO `sys_permission` VALUES (97, '获取用户列表', 'system:user:list', 3, '2024-12-18 12:07:00', '2024-12-18 12:07:00', 0);
+INSERT INTO `sys_permission` VALUES (98, '搜索用户列表', 'system:user:search', 3, '2024-12-18 14:15:46', '2024-12-18 14:15:46', 0);
+INSERT INTO `sys_permission` VALUES (99, '更新用户状态', 'system:user:status:update', 3, '2024-12-18 15:11:34', '2024-12-18 15:11:34', 0);
+INSERT INTO `sys_permission` VALUES (100, '获取用户详细信息', 'system:user:details', 3, '2024-12-18 16:40:52', '2024-12-18 16:40:52', 0);
+INSERT INTO `sys_permission` VALUES (101, '删除用户&用户角色关系', 'system:user:delete', 3, '2024-12-19 10:11:46', '2024-12-19 10:12:15', 0);
+INSERT INTO `sys_permission` VALUES (102, '查询没有该用户的角色列表', 'system:user:role:not:list', 23, '2024-12-19 11:10:11', '2024-12-19 11:10:11', 0);
+INSERT INTO `sys_permission` VALUES (103, '查询拥有用户的角色列表', 'system:role:user:list', 23, '2024-12-19 11:17:55', '2024-12-19 11:17:55', 0);
+INSERT INTO `sys_permission` VALUES (104, '搜索管理菜单列表', 'system:search:menu:list', 2, '2024-12-25 11:48:02', '2024-12-25 11:48:02', 0);
+INSERT INTO `sys_permission` VALUES (105, '添加或修改站长信息', 'blog:update:websiteInfo', 29, '2024-12-27 16:19:23', '2024-01-04 10:49:12', 0);
+INSERT INTO `sys_permission` VALUES (106, '查看网站信息-后台', 'blog:get:websiteInfo', 29, '2024-12-29 08:52:51', '2024-01-22 22:18:56', 0);
 INSERT INTO `sys_permission` VALUES (107, '新增标签', 'blog:tag:add', 33, '2024-01-04 10:55:39', '2024-01-04 10:55:39', 0);
 INSERT INTO `sys_permission` VALUES (108, '新增分类', 'blog:category:add', 34, '2024-01-04 11:17:12', '2024-01-04 11:17:12', 0);
 INSERT INTO `sys_permission` VALUES (109, '发布文章相关', 'blog:publish:article', 31, '2024-01-05 15:01:54', '2024-01-05 15:01:54', 0);
@@ -487,9 +487,9 @@ CREATE TABLE `sys_role`  (
 -- ----------------------------
 -- Records of sys_role
 -- ----------------------------
-INSERT INTO `sys_role` VALUES (1, '超级管理员', 'ADMIN', 0, 0, '最高管理者', '2023-11-17 15:19:01', '2023-12-14 16:47:07', 0);
-INSERT INTO `sys_role` VALUES (2, '测试角色', 'Test', 0, 1, '测试的用户，没有任何操作权限', '2023-11-17 15:19:06', '2023-12-25 16:28:33', 0);
-INSERT INTO `sys_role` VALUES (3, '普通用户', 'USER', 0, 3, '前台普通用户（前台用户默认角色）', '2023-12-03 21:12:24', '2023-12-14 17:15:52', 0);
+INSERT INTO `sys_role` VALUES (1, '超级管理员', 'ADMIN', 0, 0, '最高管理者', '2024-11-17 15:19:01', '2024-12-14 16:47:07', 0);
+INSERT INTO `sys_role` VALUES (2, '测试角色', 'Test', 0, 1, '测试的用户，没有任何操作权限', '2024-11-17 15:19:06', '2024-12-25 16:28:33', 0);
+INSERT INTO `sys_role` VALUES (3, '普通用户', 'USER', 0, 3, '前台普通用户（前台用户默认角色）', '2024-12-03 21:12:24', '2024-12-14 17:15:52', 0);
 
 -- ----------------------------
 -- Table structure for sys_role_menu
@@ -691,16 +691,16 @@ CREATE TABLE `sys_user`  (
 -- ----------------------------
 -- Records of sys_user
 -- ----------------------------
-INSERT INTO `sys_user` VALUES (1, 'ADMIN', 'ADMIN', 0, '$2a$10$VyFtQ3T943p3NY5R0IxzIONjdqABmuCSGiHe5uV8d1ujLGYuS2KZe', 'http://cdn.kuailemao.lielfw.cn/articleCover/Sara11676693014447852.png', '该用户比较懒还未添加简介', 'test@qq.com', '127.0.0.1', 0, '内网IP', '127.0.0.1', '内网IP', 0, '2023-12-21 19:29:37', 0, '2023-10-13 15:16:01', '2023-12-21 19:29:37', 0);
-INSERT INTO `sys_user` VALUES (2, '快乐猫ce', 'hh', 0, '$2a$10$Apqq5cDdBQSKRO1v99qb4.rwSHC/5rFY1AAPw3BGgigGOpS9mnUga', 'http://cdn.kuailemao.lielfw.cn/userAvatar/21676863574334604.png', '这个人很懒，什么都没有留下', 'test@qq.com', '127.0.0.1', 0, '内网IP', '127.0.0.1', '内网IP', 0, '2023-12-15 10:18:28', 1, '2023-12-15 10:18:05', '2024-01-16 12:32:20', 1);
-INSERT INTO `sys_user` VALUES (3, '快乐猫用户', 'qq', 0, '$2a$10$8QUAhUAD4zoLHHqcN644/.8XzN5TBJmrYIKJx.tgvttmXjh9VJi2K', 'http://cdn.kuailemao.lielfw.cn/userAvatar/21676863574334604.png', '这个人很懒，什么都没有留下', 'test@qq.com', '127.0.0.1', 0, '内网IP', '127.0.0.1', '内网IP', 0, '2023-12-19 10:17:15', 0, '2023-12-19 10:17:07', '2024-02-28 10:37:26', 1);
-INSERT INTO `sys_user` VALUES (5, '快乐猫用户', 'qq', 0, '$2a$10$8QUAhUAD4zoLHHqcN644/.8XzN5TBJmrYIKJx.tgvttmXjh9VJi2K', 'http://cdn.kuailemao.lielfw.cn/userAvatar/21676863574334604.png', '这个人很懒，什么都没有留下', 'test@qq.com', '127.0.0.1', 0, '内网IP', '127.0.0.1', '内网IP', 0, '2023-12-19 10:17:15', 0, '2023-12-19 10:17:07', '2024-02-28 10:37:26', 1);
-INSERT INTO `sys_user` VALUES (6, '快乐猫用户', 'qq', 0, '$2a$10$8QUAhUAD4zoLHHqcN644/.8XzN5TBJmrYIKJx.tgvttmXjh9VJi2K', 'http://cdn.kuailemao.lielfw.cn/userAvatar/21676863574334604.png', '这个人很懒，什么都没有留下', 'test@qq.com', '127.0.0.1', 0, '内网IP', '127.0.0.1', '内网IP', 0, '2023-12-19 10:17:15', 0, '2023-12-19 10:17:07', '2024-02-28 10:37:26', 1);
-INSERT INTO `sys_user` VALUES (10, 'ruyu', 'ruyu', 0, '$2a$10$g4u8DiBotv.H8kvF35CgM.i1l3v0/JbBya3PvGiAghJOfOcj9RfIS', 'http://cdn.kuailemao.lielfw.cn/userAvatar/21676863574334604.png', '这个人很懒，什么都没有留下', 'test@163.com', '127.0.0.1', 0, '内网IP', '127.0.0.1', '内网IP', 0, '2023-12-11 17:21:58', 0, '2023-10-17 11:29:44', '2024-02-28 10:37:26', 1);
-INSERT INTO `sys_user` VALUES (15, 'test', 'test', 0, '$2a$10$03DwMR0YxjV7KJ.D9YSPwO0qUwIT8lF1mw89SsKrUVIPVK5M2818y', 'http://cdn.kuailemao.lielfw.cn/userAvatar/21676863574334604.png', '这个人很懒，什么都没有留下', 'test@qq.com', '127.0.0.1', 0, '内网IP', '127.0.0.1', '内网IP', 0, '2023-11-30 15:50:58', 0, '2023-10-18 21:26:31', '2024-02-28 10:37:26', 1);
-INSERT INTO `sys_user` VALUES (11937114, 'kuailemao', 'kuailemao', 0, '$2a$10$6gAaRvqfhNxjc5fr6e4sauX63SclNP193gnpzeLnU/nATSRS0CG4C', 'https://foruda.gitee.com/avatar/1667975309022664009/11937114_kuailemao_1667975308.png', NULL, NULL, '127.0.0.1', 1, '内网IP', '127.0.0.1', '内网IP', 1, '2023-12-22 15:14:53', 0, '2023-12-22 15:14:53', '2024-02-28 11:13:00', 0);
-INSERT INTO `sys_user` VALUES (88065987, 'aaa', 'kuailemao', 0, '$2a$10$q7d2HRUMtxNKSIgGha3tg.syuaEdrU41AL1puQ26GgIVdzQurEMSy', 'https://avatars.githubusercontent.com/u/88065987?v=4', NULL, NULL, '127.0.0.1', 2, '内网IP', '127.0.0.1', '内网IP', 2, '2023-12-24 19:58:20', 0, '2023-12-24 19:58:20', '2024-02-28 11:13:20', 0);
-INSERT INTO `sys_user` VALUES (88065988, '快乐猫用户', 'mao', 0, '$2a$10$mvpsj1LCUe8Vl9FPzAxzKOhuin7sJ6lQZD8r8Mo09kltVkZgKVQuG', 'http://cdn.kuailemao.lielfw.cn/userAvatar/21676863574334604.png', '这个人很懒，什么都没有留下', 'test@qq.com', '127.0.0.1', 0, '内网IP', NULL, NULL, NULL, '2024-02-28 10:54:00', 0, '2024-02-28 10:54:00', '2024-02-28 10:54:00', 0);
+INSERT INTO `sys_user` VALUES (1, 'ADMIN', 'ADMIN', 0, '$2a$10$VyFtQ3T943p3NY5R0IxzIONjdqABmuCSGiHe5uV8d1ujLGYuS2KZe', 'http://cdn.hedx.lielfw.cn/articleCover/Sara11676693014447852.png', '该用户比较懒还未添加简介', 'test@qq.com', '127.0.0.1', 0, '内网IP', '127.0.0.1', '内网IP', 0, '2024-12-21 19:29:37', 0, '2024-10-13 15:16:01', '2024-12-21 19:29:37', 0);
+INSERT INTO `sys_user` VALUES (2, '快乐猫ce', 'hh', 0, '$2a$10$Apqq5cDdBQSKRO1v99qb4.rwSHC/5rFY1AAPw3BGgigGOpS9mnUga', 'http://cdn.hedx.lielfw.cn/userAvatar/21676863574334604.png', '这个人很懒，什么都没有留下', 'test@qq.com', '127.0.0.1', 0, '内网IP', '127.0.0.1', '内网IP', 0, '2024-12-15 10:18:28', 1, '2024-12-15 10:18:05', '2024-01-16 12:32:20', 1);
+INSERT INTO `sys_user` VALUES (3, '快乐猫用户', 'qq', 0, '$2a$10$8QUAhUAD4zoLHHqcN644/.8XzN5TBJmrYIKJx.tgvttmXjh9VJi2K', 'http://cdn.hedx.lielfw.cn/userAvatar/21676863574334604.png', '这个人很懒，什么都没有留下', 'test@qq.com', '127.0.0.1', 0, '内网IP', '127.0.0.1', '内网IP', 0, '2024-12-19 10:17:15', 0, '2024-12-19 10:17:07', '2024-02-28 10:37:26', 1);
+INSERT INTO `sys_user` VALUES (5, '快乐猫用户', 'qq', 0, '$2a$10$8QUAhUAD4zoLHHqcN644/.8XzN5TBJmrYIKJx.tgvttmXjh9VJi2K', 'http://cdn.hedx.lielfw.cn/userAvatar/21676863574334604.png', '这个人很懒，什么都没有留下', 'test@qq.com', '127.0.0.1', 0, '内网IP', '127.0.0.1', '内网IP', 0, '2024-12-19 10:17:15', 0, '2024-12-19 10:17:07', '2024-02-28 10:37:26', 1);
+INSERT INTO `sys_user` VALUES (6, '快乐猫用户', 'qq', 0, '$2a$10$8QUAhUAD4zoLHHqcN644/.8XzN5TBJmrYIKJx.tgvttmXjh9VJi2K', 'http://cdn.hedx.lielfw.cn/userAvatar/21676863574334604.png', '这个人很懒，什么都没有留下', 'test@qq.com', '127.0.0.1', 0, '内网IP', '127.0.0.1', '内网IP', 0, '2024-12-19 10:17:15', 0, '2024-12-19 10:17:07', '2024-02-28 10:37:26', 1);
+INSERT INTO `sys_user` VALUES (10, 'ruyu', 'ruyu', 0, '$2a$10$g4u8DiBotv.H8kvF35CgM.i1l3v0/JbBya3PvGiAghJOfOcj9RfIS', 'http://cdn.hedx.lielfw.cn/userAvatar/21676863574334604.png', '这个人很懒，什么都没有留下', 'test@163.com', '127.0.0.1', 0, '内网IP', '127.0.0.1', '内网IP', 0, '2024-12-11 17:21:58', 0, '2024-10-17 11:29:44', '2024-02-28 10:37:26', 1);
+INSERT INTO `sys_user` VALUES (15, 'test', 'test', 0, '$2a$10$03DwMR0YxjV7KJ.D9YSPwO0qUwIT8lF1mw89SsKrUVIPVK5M2818y', 'http://cdn.hedx.lielfw.cn/userAvatar/21676863574334604.png', '这个人很懒，什么都没有留下', 'test@qq.com', '127.0.0.1', 0, '内网IP', '127.0.0.1', '内网IP', 0, '2024-11-30 15:50:58', 0, '2024-10-18 21:26:31', '2024-02-28 10:37:26', 1);
+INSERT INTO `sys_user` VALUES (11937114, 'hedx', 'hedx', 0, '$2a$10$6gAaRvqfhNxjc5fr6e4sauX63SclNP193gnpzeLnU/nATSRS0CG4C', 'https://foruda.gitee.com/avatar/1667975309022664009/11937114_hedx_1667975308.png', NULL, NULL, '127.0.0.1', 1, '内网IP', '127.0.0.1', '内网IP', 1, '2024-12-22 15:14:53', 0, '2024-12-22 15:14:53', '2024-02-28 11:13:00', 0);
+INSERT INTO `sys_user` VALUES (88065987, 'aaa', 'hedx', 0, '$2a$10$q7d2HRUMtxNKSIgGha3tg.syuaEdrU41AL1puQ26GgIVdzQurEMSy', 'https://avatars.githubusercontent.com/u/88065987?v=4', NULL, NULL, '127.0.0.1', 2, '内网IP', '127.0.0.1', '内网IP', 2, '2024-12-24 19:58:20', 0, '2024-12-24 19:58:20', '2024-02-28 11:13:20', 0);
+INSERT INTO `sys_user` VALUES (88065988, '快乐猫用户', 'mao', 0, '$2a$10$mvpsj1LCUe8Vl9FPzAxzKOhuin7sJ6lQZD8r8Mo09kltVkZgKVQuG', 'http://cdn.hedx.lielfw.cn/userAvatar/21676863574334604.png', '这个人很懒，什么都没有留下', 'test@qq.com', '127.0.0.1', 0, '内网IP', NULL, NULL, NULL, '2024-02-28 10:54:00', 0, '2024-02-28 10:54:00', '2024-02-28 10:54:00', 0);
 
 -- ----------------------------
 -- Table structure for sys_user_role
@@ -744,7 +744,7 @@ CREATE TABLE `sys_website_info`  (
 -- ----------------------------
 -- Records of sys_website_info
 -- ----------------------------
-INSERT INTO `sys_website_info` VALUES (1, 'http://43.136.78.47:9000/blog/websiteInfo/avatar/76829cfe-f670-4e26-85c6-ab46f8b45250.jpg', 'Ruyu', '不经一番寒彻骨，怎得梅花扑鼻香', 'http://43.136.78.47:9000/blog/websiteInfo/background/a26d4206-23ad-4eff-bde7-e39a338bc2f8.png', 'https://gitee.com/bbbb', 'https://github.com/aaa', 'Ruyu-快乐猫', '欢迎访问我的个人博客，希望你能喜欢！', '欢迎指出网站的不足，给我提供意见', '备案信息', '2024-01-01 16:00:25', '2023-12-27 14:28:10', '2024-01-22 22:38:24', 0);
+INSERT INTO `sys_website_info` VALUES (1, 'http://43.136.78.47:9000/blog/websiteInfo/avatar/76829cfe-f670-4e26-85c6-ab46f8b45250.jpg', 'Ruyu', '不经一番寒彻骨，怎得梅花扑鼻香', 'http://43.136.78.47:9000/blog/websiteInfo/background/a26d4206-23ad-4eff-bde7-e39a338bc2f8.png', 'https://gitee.com/bbbb', 'https://github.com/aaa', 'Ruyu-快乐猫', '欢迎访问我的个人博客，希望你能喜欢！', '欢迎指出网站的不足，给我提供意见', '备案信息', '2024-01-01 16:00:25', '2024-12-27 14:28:10', '2024-01-22 22:38:24', 0);
 
 -- ----------------------------
 -- Table structure for t_article
@@ -770,10 +770,10 @@ CREATE TABLE `t_article`  (
 -- ----------------------------
 -- Records of t_article
 -- ----------------------------
-INSERT INTO `t_article` VALUES (1, 1, 2, 'http://cdn.kuailemao.lielfw.cn/articleCover/Sara11676693097117968.png', 'java的继承', '# 🍖2、继承\r\n#### 🍟2.1、继承的基本概念\r\n> 继承是面向对象的三大特征之一，继承可以解决编程中代码冗余的问题，是实现代码重用的重要手段之一。\r\n> **语法：**\r\n> [ 访问修饰符 ] class  \\<SubClass\\>  extends <SuperClass\\>{\r\n>\r\n> }\r\n\r\n其中，SubClass 被称为子类或派生类，SuperClass 被称为父类或基类。\r\n\r\n> Java 继承规则如下：\r\n> 1、可以继承父类中 public 和 protected 修饰的属性和方法，不论子类和父类是否在同一包中。\r\n> 2、可以继承默认访问修饰符修饰的属性和方法，但是子类和父类必须在同一包中\r\n> 3、无法继承 private 修饰的属性和方法\r\n> 4、无法继承父类的构造方法\r\n\r\n**注意：**\r\n> 在 Java 中只支持单继承，即每个类只能有一个直接父类\r\n\r\n#### 🍟2.2、继承的应用\r\n如下：\r\n```java\r\n    /**\r\n    *动物父类\r\n    */\r\n	public class Animal {\r\n    public void cry(){\r\n        System.out.println(\"动物叫。。。。\");\r\n    }\r\n}\r\n	/**\r\n	*	继承了动物类的小猫类也有 cry() 方法（子类）\r\n	*/\r\npublic class Cat extends Animal {\r\n   // 有父类的方法与属性 \r\n}\r\n```\r\n#### 🍟2.3、Object\r\n> Object 类属性超级父类（老祖宗），当一个类没有任何继承的时候，默认继承 Object 类，自带 Object 类里面的 方法与属性\r\n\r\n**注意：**\r\n> 子类被创建对象的时候必是先执行 Object 类的构造方法，因为构造方法第一行中有隐藏的 super() 调用父类构造方法，最终的父类一定是 Object 类\r\n\r\n#### 🍟2.4、继承关系中的方法重写\r\n> 子类通过继承可以拥有和父类相同的特征和行为，另外，子类也可以定义自己特有的行为，既沿袭了父类的方法名称，又重新实现了父类方法，这就是方法重写。\r\n\r\n> 在子类中可以根据需求对从父类继承的方法进行重写编写，这被称为方法重写或方法覆盖。\r\n\r\n**方法重写必须遵守以下规则：**\r\n* 重写方法和被重写方法必须具有相同的方法名\r\n* 重写方法和被重写方法必须具有相同的参数列表\r\n* 重写方法的返回值类型必须和被重写方法的返回值类型相同或是其子类\r\n* 重写方法不能缩小被重写方法的访问权限\r\n\r\n**重写的时候可以在方法上面使用注解：**\r\n\r\n> @Override\r\n> @Override 是用 Java 注解的方法表示该方法重写了父类方法，可以写也可以不写，在功能实现上没有区别，但是通过 @Override 注解，程序更加方便阅读。另外，编译器也会帮助验证 @Override 下面的方法名是否是父类所有的。如果其不符合方法重写规则，则会报错。\r\n\r\n**提示：**\r\n> Java 注解又被称为 Java 标注，是 Java 5 引入的一种注解机制。  \r\n\r\n#### 🍟2.5、方法重载和方法重写的区别\r\n* 方法重载涉及同一个类中的同名方法，要求方法名相同，参数列表不同，与返回值类型和访问修饰符无关\r\n* 方法重写涉及的是子类和父类之间的同名方法，要求方法名相同，参数列表相同，返回值类型i相同或是其子类\r\n\r\n#### 🍟2.6、super关键字\r\n> 如果想在子类中调用父类的被重写的方法，可以使用 ” super.方法名 “实现\r\n\r\nsuper 关键字代表对当前对象的直接父类对象的默认引用。在子类中可以通过 super 关键字访问父类的成员，包括父类的属性和方法。语法如下：\r\n> 语法：\r\n> 访问父类构造方法 ：super(参数)\r\n> 访问父类属性 / 方法 ：super.< 父类属性 / 方法 \\>\r\n\r\n使用 super 关键字，需要注意以下几点：\r\n* super 关键字必须出现在子类（子类的方法和构造方法）中，而不允许在其他位置。\r\n* 可以访问父类的成员，如父类的属性，方法，构造方法。\r\n* 注意访问权限的限制，如无法通过 super 关键字访问 private 成员。\r\n\r\n**注意：**\r\n\r\n> 1、在构造方法中如果有 this 语句或 super 语句，则只能是第一条语句。\r\n> 2、在一个构造方法中，不允许同时使用 this 关键字和 super 关键字调用构造方法（否则就有两条第一条语句）。\r\n> 3、在静态方法中不允许出现 this 关键字或 super 关键字。\r\n> 4、在实例方法中，this 语句和 super 语句不要求是第一条语句，可以共存。\r\n> 5、子类构造方法中第一行有隐藏的 **super( )** 调用父类构造方法，最终父类一定是 Object 类\r\n\r\n#### 🍟2.7、继承关系中的构造方法\r\n在 Java 中，一个类的构造方法在如下两种情况下会被执行：\r\n* 创建该类对象（实例化）\r\n* 创建该类的子类对象（子类的实例化）\r\n\r\n> 子类在实例化时，会首先执行其父类的构造方法，然后才会执行子类的构造方法。\r\n> 在 Java 语言中，当创建一个对象时，Java 虚拟机（JVM）会按照父类——>子类的顺序执行一系列的构造方法。\r\n\r\n**子类继承父类时构造方法的调用规则如下：**\r\n* 如果在类的构造方法中没有通过 super 关键字显式调用父类地带参构造方法，也没有通过 this 关键字显式调用自身地其他构造方法，则系统会默认先调用父类的无参构造方法。在这种情况下，是否写 “ super( );  ”语句，效果是一样的。\r\n* 如果在子类的构造方法中通过 super 关键字显式地调用了父类地带参构造方法，那么将执行父类相应的构造方法，而不执行父类无参构造方法。\r\n* 如果在子类的构造方法中通过 this 关键字显式地调用了自身地其他构造方法，那么在相应构造方法中遵循以上两条规则。\r\n* 如果存在多级继承关系，则在创建一个子类对象时，以上规则会多次向上更高一级父类应用，直到执行顶级父类 Object 类的无参构造方法为止。\r\n\r\n<center>-----------------------<b style=\"color:#C3C326\">世界会向那些有目标和远见的人让路。</b>-----------------------</center>', 1, 1, 1, 266, '2023-10-15 02:26:45', '2023-12-06 00:34:35', 0);
-INSERT INTO `t_article` VALUES (2, 1, 1, 'http://cdn.kuailemao.lielfw.cn/articleCover/kuailemao11677588411382186.jpg', 'java的多态啊', '### 🍖3、多态\n![](http://43.136.78.47:9000/blog/article/articleImage/161ccca6-65c9-4ef9-9098-4a6f0446b9f9.png)\n![](http://43.136.78.47:9000/blog/article/articleImage/f34c07f4-f88a-48bf-af18-4daf44db7101.png)\n\n\n> * 面向对象的三大特性为 封装、继承、多态。最后一个特性——多态。它能使同一个操作当作用于不同的对象时，产生不同的执行结果。\n>\n> * 使用多态可以提高代码的可维护性和可扩展性\n\n#### 🍟3.1、子类到父类的转换（向上转型）\n> 子类到父类的转换被称为向上转型。（自动类型转换）\n\n **语法：**\n> < 父类型 \\> < 引用变量名 \\> = new < 子类型 \\> ( );\n```Java\n	Strive strive1 = new s1();\n```\nStrive 为父类型 strive1 为引用变量名 s1 为子类型\n\n* 父类型的引用指向子类型的对象\n\n**实现多态的三个条件如下：**\n\n> 1、继承的存在（继承是多态的继承，没有继承就没有多态）。\n>\n> > 2、子类重写父类的方法（多态下调用子类重写后的方法）。\n> >\n> > > 3、父类引用变量指向子类对象（向上转型）。\n\n#### 🍟3.2、父类到子类的转换（向下转型）\n> 父类到子类的转换被称为向上转型。（强制类型转换）\n\n**语法：**\n> < 子类型 \\> < 引用变量名 \\> = ( < 子类型 \\> ) < 父类型的引用变量 \\>;\n\n```java\n	Strive strive1 = (Strive)s1;\n```\ns1 为 父类型的引用变量，Strive 为子类型，strive1 为引用变量名\n\n#### 🍟3.3、instanceof 运算符\n**语法：**\n\n> 对象 instanceof 类或接口\n\n* 该运算符用来判断一个对象是否属于一个类或实现了一个接口，结果为 **true** 或 **false**。\n* 在强制类型转换之前通过 **instanceof** 运算符检查对象的真实类型，再进行相应的强制类型转换，这样就可以避免类型转换异常，从而提高代码的健壮性。\n\n```java\n	 if(Strive instanceof s1){  // 类型判断\n            Strive strive1 = (Strive)s1;\n        }else{\n        	System.out.println(\"Strive与s1没有关系\");\n        }\n```\n\n#### 🍟3.4、多态的优势\n* 可替换性：多态对已存在的代码具有可替换性\n* 可扩充性：多态对代码具有可扩充性。增加新的子类不影响已存在类的多态性，继承性，以及其他特性的运行和操作。实际上新加子类更容易获得多态功能。\n* 灵活性：在多态的应用中，体现了灵活多样的操作，提高了使用效率。\n* 简化性：多态简化了应用软件的代码编写和修改过程，尤其在处理大量对象的运算和操作时，这个特点尤为突出\n\n**多态的使用大多体现在实际开发中，多写代码，多用多态，慢慢自然能够体验到多态的灵活性以及多态的重要性**', 1, 1, 1, 138, '2022-10-15 02:26:45', '2024-01-23 23:08:12', 1);
-INSERT INTO `t_article` VALUES (3, 1, 2, 'http://cdn.kuailemao.lielfw.cn/PicGo/idea%E8%83%8C%E6%99%AF.png', '今天出去玩了', '好好玩啊，好好玩啊，好好玩啊，好好玩啊，好好玩啊，好好玩啊，好好玩啊，好好玩啊，好好玩啊，好好玩啊，好好玩啊，好好玩啊，好好玩啊，好好玩啊，', 1, 1, 1, 133, '2023-10-15 02:26:45', '2024-01-08 10:41:42', 0);
-INSERT INTO `t_article` VALUES (24, 1, 3, 'http://cdn.kuailemao.lielfw.cn/PicGo/idea%E8%83%8C%E6%99%AF.png', '测试分类3', '好好玩啊，好好玩啊，好好玩啊，好好玩啊，好好玩啊，好好玩啊，好好玩啊，好好玩啊，好好玩啊，好好玩啊，好好玩啊，好好玩啊，好好玩啊，好好玩啊，', 1, 0, 1, 131, '2023-10-15 02:26:45', '2023-10-18 00:34:35', 0);
+INSERT INTO `t_article` VALUES (1, 1, 2, 'http://cdn.hedx.lielfw.cn/articleCover/Sara11676693097117968.png', 'java的继承', '# 🍖2、继承\r\n#### 🍟2.1、继承的基本概念\r\n> 继承是面向对象的三大特征之一，继承可以解决编程中代码冗余的问题，是实现代码重用的重要手段之一。\r\n> **语法：**\r\n> [ 访问修饰符 ] class  \\<SubClass\\>  extends <SuperClass\\>{\r\n>\r\n> }\r\n\r\n其中，SubClass 被称为子类或派生类，SuperClass 被称为父类或基类。\r\n\r\n> Java 继承规则如下：\r\n> 1、可以继承父类中 public 和 protected 修饰的属性和方法，不论子类和父类是否在同一包中。\r\n> 2、可以继承默认访问修饰符修饰的属性和方法，但是子类和父类必须在同一包中\r\n> 3、无法继承 private 修饰的属性和方法\r\n> 4、无法继承父类的构造方法\r\n\r\n**注意：**\r\n> 在 Java 中只支持单继承，即每个类只能有一个直接父类\r\n\r\n#### 🍟2.2、继承的应用\r\n如下：\r\n```java\r\n    /**\r\n    *动物父类\r\n    */\r\n	public class Animal {\r\n    public void cry(){\r\n        System.out.println(\"动物叫。。。。\");\r\n    }\r\n}\r\n	/**\r\n	*	继承了动物类的小猫类也有 cry() 方法（子类）\r\n	*/\r\npublic class Cat extends Animal {\r\n   // 有父类的方法与属性 \r\n}\r\n```\r\n#### 🍟2.3、Object\r\n> Object 类属性超级父类（老祖宗），当一个类没有任何继承的时候，默认继承 Object 类，自带 Object 类里面的 方法与属性\r\n\r\n**注意：**\r\n> 子类被创建对象的时候必是先执行 Object 类的构造方法，因为构造方法第一行中有隐藏的 super() 调用父类构造方法，最终的父类一定是 Object 类\r\n\r\n#### 🍟2.4、继承关系中的方法重写\r\n> 子类通过继承可以拥有和父类相同的特征和行为，另外，子类也可以定义自己特有的行为，既沿袭了父类的方法名称，又重新实现了父类方法，这就是方法重写。\r\n\r\n> 在子类中可以根据需求对从父类继承的方法进行重写编写，这被称为方法重写或方法覆盖。\r\n\r\n**方法重写必须遵守以下规则：**\r\n* 重写方法和被重写方法必须具有相同的方法名\r\n* 重写方法和被重写方法必须具有相同的参数列表\r\n* 重写方法的返回值类型必须和被重写方法的返回值类型相同或是其子类\r\n* 重写方法不能缩小被重写方法的访问权限\r\n\r\n**重写的时候可以在方法上面使用注解：**\r\n\r\n> @Override\r\n> @Override 是用 Java 注解的方法表示该方法重写了父类方法，可以写也可以不写，在功能实现上没有区别，但是通过 @Override 注解，程序更加方便阅读。另外，编译器也会帮助验证 @Override 下面的方法名是否是父类所有的。如果其不符合方法重写规则，则会报错。\r\n\r\n**提示：**\r\n> Java 注解又被称为 Java 标注，是 Java 5 引入的一种注解机制。  \r\n\r\n#### 🍟2.5、方法重载和方法重写的区别\r\n* 方法重载涉及同一个类中的同名方法，要求方法名相同，参数列表不同，与返回值类型和访问修饰符无关\r\n* 方法重写涉及的是子类和父类之间的同名方法，要求方法名相同，参数列表相同，返回值类型i相同或是其子类\r\n\r\n#### 🍟2.6、super关键字\r\n> 如果想在子类中调用父类的被重写的方法，可以使用 ” super.方法名 “实现\r\n\r\nsuper 关键字代表对当前对象的直接父类对象的默认引用。在子类中可以通过 super 关键字访问父类的成员，包括父类的属性和方法。语法如下：\r\n> 语法：\r\n> 访问父类构造方法 ：super(参数)\r\n> 访问父类属性 / 方法 ：super.< 父类属性 / 方法 \\>\r\n\r\n使用 super 关键字，需要注意以下几点：\r\n* super 关键字必须出现在子类（子类的方法和构造方法）中，而不允许在其他位置。\r\n* 可以访问父类的成员，如父类的属性，方法，构造方法。\r\n* 注意访问权限的限制，如无法通过 super 关键字访问 private 成员。\r\n\r\n**注意：**\r\n\r\n> 1、在构造方法中如果有 this 语句或 super 语句，则只能是第一条语句。\r\n> 2、在一个构造方法中，不允许同时使用 this 关键字和 super 关键字调用构造方法（否则就有两条第一条语句）。\r\n> 3、在静态方法中不允许出现 this 关键字或 super 关键字。\r\n> 4、在实例方法中，this 语句和 super 语句不要求是第一条语句，可以共存。\r\n> 5、子类构造方法中第一行有隐藏的 **super( )** 调用父类构造方法，最终父类一定是 Object 类\r\n\r\n#### 🍟2.7、继承关系中的构造方法\r\n在 Java 中，一个类的构造方法在如下两种情况下会被执行：\r\n* 创建该类对象（实例化）\r\n* 创建该类的子类对象（子类的实例化）\r\n\r\n> 子类在实例化时，会首先执行其父类的构造方法，然后才会执行子类的构造方法。\r\n> 在 Java 语言中，当创建一个对象时，Java 虚拟机（JVM）会按照父类——>子类的顺序执行一系列的构造方法。\r\n\r\n**子类继承父类时构造方法的调用规则如下：**\r\n* 如果在类的构造方法中没有通过 super 关键字显式调用父类地带参构造方法，也没有通过 this 关键字显式调用自身地其他构造方法，则系统会默认先调用父类的无参构造方法。在这种情况下，是否写 “ super( );  ”语句，效果是一样的。\r\n* 如果在子类的构造方法中通过 super 关键字显式地调用了父类地带参构造方法，那么将执行父类相应的构造方法，而不执行父类无参构造方法。\r\n* 如果在子类的构造方法中通过 this 关键字显式地调用了自身地其他构造方法，那么在相应构造方法中遵循以上两条规则。\r\n* 如果存在多级继承关系，则在创建一个子类对象时，以上规则会多次向上更高一级父类应用，直到执行顶级父类 Object 类的无参构造方法为止。\r\n\r\n<center>-----------------------<b style=\"color:#C3C326\">世界会向那些有目标和远见的人让路。</b>-----------------------</center>', 1, 1, 1, 266, '2024-10-15 02:26:45', '2024-12-06 00:34:35', 0);
+INSERT INTO `t_article` VALUES (2, 1, 1, 'http://cdn.hedx.lielfw.cn/articleCover/hedx11677588411382186.jpg', 'java的多态啊', '### 🍖3、多态\n![](http://43.136.78.47:9000/blog/article/articleImage/161ccca6-65c9-4ef9-9098-4a6f0446b9f9.png)\n![](http://43.136.78.47:9000/blog/article/articleImage/f34c07f4-f88a-48bf-af18-4daf44db7101.png)\n\n\n> * 面向对象的三大特性为 封装、继承、多态。最后一个特性——多态。它能使同一个操作当作用于不同的对象时，产生不同的执行结果。\n>\n> * 使用多态可以提高代码的可维护性和可扩展性\n\n#### 🍟3.1、子类到父类的转换（向上转型）\n> 子类到父类的转换被称为向上转型。（自动类型转换）\n\n **语法：**\n> < 父类型 \\> < 引用变量名 \\> = new < 子类型 \\> ( );\n```Java\n	Strive strive1 = new s1();\n```\nStrive 为父类型 strive1 为引用变量名 s1 为子类型\n\n* 父类型的引用指向子类型的对象\n\n**实现多态的三个条件如下：**\n\n> 1、继承的存在（继承是多态的继承，没有继承就没有多态）。\n>\n> > 2、子类重写父类的方法（多态下调用子类重写后的方法）。\n> >\n> > > 3、父类引用变量指向子类对象（向上转型）。\n\n#### 🍟3.2、父类到子类的转换（向下转型）\n> 父类到子类的转换被称为向上转型。（强制类型转换）\n\n**语法：**\n> < 子类型 \\> < 引用变量名 \\> = ( < 子类型 \\> ) < 父类型的引用变量 \\>;\n\n```java\n	Strive strive1 = (Strive)s1;\n```\ns1 为 父类型的引用变量，Strive 为子类型，strive1 为引用变量名\n\n#### 🍟3.3、instanceof 运算符\n**语法：**\n\n> 对象 instanceof 类或接口\n\n* 该运算符用来判断一个对象是否属于一个类或实现了一个接口，结果为 **true** 或 **false**。\n* 在强制类型转换之前通过 **instanceof** 运算符检查对象的真实类型，再进行相应的强制类型转换，这样就可以避免类型转换异常，从而提高代码的健壮性。\n\n```java\n	 if(Strive instanceof s1){  // 类型判断\n            Strive strive1 = (Strive)s1;\n        }else{\n        	System.out.println(\"Strive与s1没有关系\");\n        }\n```\n\n#### 🍟3.4、多态的优势\n* 可替换性：多态对已存在的代码具有可替换性\n* 可扩充性：多态对代码具有可扩充性。增加新的子类不影响已存在类的多态性，继承性，以及其他特性的运行和操作。实际上新加子类更容易获得多态功能。\n* 灵活性：在多态的应用中，体现了灵活多样的操作，提高了使用效率。\n* 简化性：多态简化了应用软件的代码编写和修改过程，尤其在处理大量对象的运算和操作时，这个特点尤为突出\n\n**多态的使用大多体现在实际开发中，多写代码，多用多态，慢慢自然能够体验到多态的灵活性以及多态的重要性**', 1, 1, 1, 138, '2022-10-15 02:26:45', '2024-01-23 23:08:12', 1);
+INSERT INTO `t_article` VALUES (3, 1, 2, 'http://cdn.hedx.lielfw.cn/PicGo/idea%E8%83%8C%E6%99%AF.png', '今天出去玩了', '好好玩啊，好好玩啊，好好玩啊，好好玩啊，好好玩啊，好好玩啊，好好玩啊，好好玩啊，好好玩啊，好好玩啊，好好玩啊，好好玩啊，好好玩啊，好好玩啊，', 1, 1, 1, 133, '2024-10-15 02:26:45', '2024-01-08 10:41:42', 0);
+INSERT INTO `t_article` VALUES (24, 1, 3, 'http://cdn.hedx.lielfw.cn/PicGo/idea%E8%83%8C%E6%99%AF.png', '测试分类3', '好好玩啊，好好玩啊，好好玩啊，好好玩啊，好好玩啊，好好玩啊，好好玩啊，好好玩啊，好好玩啊，好好玩啊，好好玩啊，好好玩啊，好好玩啊，好好玩啊，', 1, 0, 1, 131, '2024-10-15 02:26:45', '2024-10-18 00:34:35', 0);
 INSERT INTO `t_article` VALUES (32, 1, 4, 'http://43.136.78.47:9000/blog/article/articleCover/d4574635-ba1d-4c01-beda-1ad25c4db0e3.png', '测试文章', '## 这是一篇测试文章\n> 你看见这篇文章说明后台发布文章功能成功\n\n```mermaid\ngantt\ntitle A Gantt Diagram\ndateFormat  YYYY-MM-DD\nsection Section\nA task  :a1, 2014-01-01, 30d\nAnother task  :after a1, 20d\n```\n\n### 图表\n```mermaid\nclassDiagram\n  class Animal\n  Vehicle <|-- Car\n```\n', 1, 0, 1, 7, '2024-01-04 21:32:19', '2024-01-08 10:48:06', 0);
 INSERT INTO `t_article` VALUES (33, 1, 2, 'http://43.136.78.47:9000/blog/article/articleCover/4580f62d-0548-47c5-8e94-42fb4dae1560.png', '图片上传', '# 测试图片上传\n## 下面是预览图\n> ![](http://43.136.78.47:9000/blog/article/articleImage/bc35310c-fe3c-487b-9d06-e2d66bec9a3a.gif)\n### 剪切上传\n![](http://43.136.78.47:9000/blog/article/articleImage/1f0b3ec4-91aa-4165-b1f8-060e89baf783.png)\n![](http://43.136.78.47:9000/blog/article/articleImage/0d45c380-4f54-42e6-8c94-fb589c6444f2.gif)\n', 1, 0, 1, 1, '2024-01-05 16:49:37', '2024-01-09 23:53:42', 1);
 INSERT INTO `t_article` VALUES (37, 1, 1, 'http://43.136.78.47:9000/blog/article/articleCover/72494e09-3fae-4a7d-bfe9-37108bfd3766.png', '测是AA', '顶顶顶', 1, 0, 1, 0, '2024-01-08 10:39:36', '2024-01-09 23:47:46', 1);
@@ -797,15 +797,15 @@ CREATE TABLE `t_article_tag`  (
 -- ----------------------------
 -- Records of t_article_tag
 -- ----------------------------
-INSERT INTO `t_article_tag` VALUES (1, 1, 1, '2023-10-15 02:04:40', 0);
-INSERT INTO `t_article_tag` VALUES (2, 1, 2, '2023-10-15 02:04:47', 0);
-INSERT INTO `t_article_tag` VALUES (3, 1, 3, '2023-10-15 02:04:57', 0);
-INSERT INTO `t_article_tag` VALUES (28, 24, 2, '2023-10-29 23:07:40', 0);
-INSERT INTO `t_article_tag` VALUES (29, 2, 3, '2023-10-15 02:04:57', 1);
-INSERT INTO `t_article_tag` VALUES (30, 2, 1, '2023-10-15 02:04:57', 1);
-INSERT INTO `t_article_tag` VALUES (31, 3, 3, '2023-10-15 02:04:57', 0);
-INSERT INTO `t_article_tag` VALUES (32, 3, 5, '2023-10-30 10:16:22', 0);
-INSERT INTO `t_article_tag` VALUES (33, 24, 4, '2023-10-30 10:16:36', 0);
+INSERT INTO `t_article_tag` VALUES (1, 1, 1, '2024-10-15 02:04:40', 0);
+INSERT INTO `t_article_tag` VALUES (2, 1, 2, '2024-10-15 02:04:47', 0);
+INSERT INTO `t_article_tag` VALUES (3, 1, 3, '2024-10-15 02:04:57', 0);
+INSERT INTO `t_article_tag` VALUES (28, 24, 2, '2024-10-29 23:07:40', 0);
+INSERT INTO `t_article_tag` VALUES (29, 2, 3, '2024-10-15 02:04:57', 1);
+INSERT INTO `t_article_tag` VALUES (30, 2, 1, '2024-10-15 02:04:57', 1);
+INSERT INTO `t_article_tag` VALUES (31, 3, 3, '2024-10-15 02:04:57', 0);
+INSERT INTO `t_article_tag` VALUES (32, 3, 5, '2024-10-30 10:16:22', 0);
+INSERT INTO `t_article_tag` VALUES (33, 24, 4, '2024-10-30 10:16:36', 0);
 INSERT INTO `t_article_tag` VALUES (34, 27, 2, '2024-01-04 17:11:13', 0);
 INSERT INTO `t_article_tag` VALUES (35, 27, 3, '2024-01-04 17:11:13', 0);
 INSERT INTO `t_article_tag` VALUES (36, 27, 4, '2024-01-04 17:11:13', 0);
@@ -869,9 +869,9 @@ CREATE TABLE `t_category`  (
 -- ----------------------------
 -- Records of t_category
 -- ----------------------------
-INSERT INTO `t_category` VALUES (1, '生活', '2023-10-15 02:03:42', '2023-10-15 02:03:45', 0);
-INSERT INTO `t_category` VALUES (2, '技术', '2023-10-15 02:03:53', '2023-10-15 02:03:56', 0);
-INSERT INTO `t_category` VALUES (3, '娱乐', '2023-10-15 02:04:04', '2023-10-15 02:04:06', 0);
+INSERT INTO `t_category` VALUES (1, '生活', '2024-10-15 02:03:42', '2024-10-15 02:03:45', 0);
+INSERT INTO `t_category` VALUES (2, '技术', '2024-10-15 02:03:53', '2024-10-15 02:03:56', 0);
+INSERT INTO `t_category` VALUES (3, '娱乐', '2024-10-15 02:04:04', '2024-10-15 02:04:06', 0);
 INSERT INTO `t_category` VALUES (4, '分类', '2024-01-04 11:23:27', '2024-01-04 11:23:27', 0);
 INSERT INTO `t_category` VALUES (5, '测试', '2024-01-08 10:48:43', '2024-01-18 22:52:54', 1);
 INSERT INTO `t_category` VALUES (9, '测添加', '2024-01-18 22:53:01', '2024-01-18 22:53:06', 1);
@@ -902,10 +902,10 @@ CREATE TABLE `t_comment`  (
 -- ----------------------------
 INSERT INTO `t_comment` VALUES (1, 1, 1, NULL, NULL, '这是一条父评论[3d眼镜]', 1, NULL, 1, '2021-01-01 12:00:00', '2021-01-01 12:00:00', 0);
 INSERT INTO `t_comment` VALUES (13, 1, 1, NULL, NULL, '这是一条父评论啊', 1, NULL, 1, '2021-01-01 12:00:00', '2024-01-22 20:12:13', 0);
-INSERT INTO `t_comment` VALUES (43, 2, 4, NULL, NULL, '666[哭泣]', 1, NULL, 1, '2023-11-06 11:30:23', '2023-11-06 11:30:23', 0);
-INSERT INTO `t_comment` VALUES (44, 2, 4, 43, 43, '哈哈哈🤑', 1, 1, 1, '2023-11-06 11:32:30', '2023-11-06 11:32:30', 0);
-INSERT INTO `t_comment` VALUES (47, 2, 4, 41, 46, '好像是', 1, 1, 1, '2023-11-06 11:35:34', '2023-11-06 11:35:34', 0);
-INSERT INTO `t_comment` VALUES (48, 2, 3, NULL, NULL, '你好啊[扶额]', 1, NULL, 1, '2023-12-17 17:13:09', '2023-12-17 17:13:09', 0);
+INSERT INTO `t_comment` VALUES (43, 2, 4, NULL, NULL, '666[哭泣]', 1, NULL, 1, '2024-11-06 11:30:23', '2024-11-06 11:30:23', 0);
+INSERT INTO `t_comment` VALUES (44, 2, 4, 43, 43, '哈哈哈🤑', 1, 1, 1, '2024-11-06 11:32:30', '2024-11-06 11:32:30', 0);
+INSERT INTO `t_comment` VALUES (47, 2, 4, 41, 46, '好像是', 1, 1, 1, '2024-11-06 11:35:34', '2024-11-06 11:35:34', 0);
+INSERT INTO `t_comment` VALUES (48, 2, 3, NULL, NULL, '你好啊[扶额]', 1, NULL, 1, '2024-12-17 17:13:09', '2024-12-17 17:13:09', 0);
 INSERT INTO `t_comment` VALUES (51, 2, 2, NULL, NULL, '😦', 1, NULL, 1, '2024-01-07 21:24:30', '2024-01-07 21:24:30', 0);
 INSERT INTO `t_comment` VALUES (52, 1, 3, NULL, NULL, '你好啊😁', 88065988, NULL, 1, '2024-02-28 11:01:34', '2024-02-28 11:01:34', 0);
 INSERT INTO `t_comment` VALUES (53, 1, 1, 13, 13, '子评论回复😍😍', 88065988, 1, 1, '2024-02-28 11:02:15', '2024-02-28 11:02:15', 0);
@@ -976,12 +976,12 @@ CREATE TABLE `t_like`  (
 -- ----------------------------
 -- Records of t_like
 -- ----------------------------
-INSERT INTO `t_like` VALUES (257, 1, 2, 5, '2023-11-06 11:02:40', '2023-11-06 11:02:40');
-INSERT INTO `t_like` VALUES (261, 1, 3, 4, '2023-11-06 11:28:30', '2023-11-06 11:28:30');
-INSERT INTO `t_like` VALUES (262, 1, 3, 5, '2023-11-06 11:28:36', '2023-11-06 11:28:36');
-INSERT INTO `t_like` VALUES (263, 1, 2, 46, '2023-11-06 11:35:39', '2023-11-06 11:35:39');
-INSERT INTO `t_like` VALUES (264, 1, 2, 41, '2023-11-06 11:35:41', '2023-11-06 11:35:41');
-INSERT INTO `t_like` VALUES (269, 1, 2, 26, '2023-12-11 16:44:51', '2023-12-11 16:44:51');
+INSERT INTO `t_like` VALUES (257, 1, 2, 5, '2024-11-06 11:02:40', '2024-11-06 11:02:40');
+INSERT INTO `t_like` VALUES (261, 1, 3, 4, '2024-11-06 11:28:30', '2024-11-06 11:28:30');
+INSERT INTO `t_like` VALUES (262, 1, 3, 5, '2024-11-06 11:28:36', '2024-11-06 11:28:36');
+INSERT INTO `t_like` VALUES (263, 1, 2, 46, '2024-11-06 11:35:39', '2024-11-06 11:35:39');
+INSERT INTO `t_like` VALUES (264, 1, 2, 41, '2024-11-06 11:35:41', '2024-11-06 11:35:41');
+INSERT INTO `t_like` VALUES (269, 1, 2, 26, '2024-12-11 16:44:51', '2024-12-11 16:44:51');
 INSERT INTO `t_like` VALUES (283, 1, 1, 3, '2024-01-01 23:20:59', '2024-01-01 23:20:59');
 
 -- ----------------------------
@@ -1006,12 +1006,12 @@ CREATE TABLE `t_link`  (
 -- ----------------------------
 -- Records of t_link
 -- ----------------------------
-INSERT INTO `t_link` VALUES (1, 1, '网站名称', 'http://www.example.com', '这是一个示例网站', 'http://cdn.kuailemao.lielfw.cn/articleCover/21676717033297579.jpg', 1, 'example@example.com', '2023-11-14 10:13:07', '2024-02-28 10:22:45', 0);
-INSERT INTO `t_link` VALUES (2, 1, '网站名称', 'http://www.example.com', '这是一个示例网站', 'http://cdn.kuailemao.lielfw.cn/articleCover/21676717033297579.jpg', 1, 'example@example.com', '2023-11-14 10:32:55', '2024-01-22 21:38:45', 0);
-INSERT INTO `t_link` VALUES (4, 1, '网站名称', 'https://www.baidu.com/', '这是一个示例网站这是一个示例网站这是一个示例网站都是进口粮', 'http://cdn.kuailemao.lielfw.cn/articleCover/21676717033297579.jpg', 1, 'example@example.com', '2023-11-14 10:37:29', '2023-11-14 10:37:29', 0);
-INSERT INTO `t_link` VALUES (6, 1, '网站名称', 'http://www.example.com', '这是一个示例网站', 'http://cdn.kuailemao.lielfw.cn/articleCover/21676717033297579.jpg', 1, 'example@example.com', '2023-11-14 10:56:16', '2023-11-14 10:56:16', 0);
-INSERT INTO `t_link` VALUES (8, 1, '网站名称', 'http://www.example.com', '这是一个示例网站', 'http://cdn.kuailemao.lielfw.cn/articleCover/Sara11676693097117968.png', 1, 'example@example.com', '2023-11-14 10:57:50', '2023-11-14 10:57:50', 0);
-INSERT INTO `t_link` VALUES (18, 1, '无语小站', '  http://localhost:99/', '无语小站无语小站', 'http://cdn.kuailemao.lielfw.cn/articleCover/21676717033297579.jpg', 1, '3490223402@qq.com', '2024-01-22 21:55:08', '2024-01-22 21:55:36', 0);
+INSERT INTO `t_link` VALUES (1, 1, '网站名称', 'http://www.example.com', '这是一个示例网站', 'http://cdn.hedx.lielfw.cn/articleCover/21676717033297579.jpg', 1, 'example@example.com', '2024-11-14 10:13:07', '2024-02-28 10:22:45', 0);
+INSERT INTO `t_link` VALUES (2, 1, '网站名称', 'http://www.example.com', '这是一个示例网站', 'http://cdn.hedx.lielfw.cn/articleCover/21676717033297579.jpg', 1, 'example@example.com', '2024-11-14 10:32:55', '2024-01-22 21:38:45', 0);
+INSERT INTO `t_link` VALUES (4, 1, '网站名称', 'https://www.baidu.com/', '这是一个示例网站这是一个示例网站这是一个示例网站都是进口粮', 'http://cdn.hedx.lielfw.cn/articleCover/21676717033297579.jpg', 1, 'example@example.com', '2024-11-14 10:37:29', '2024-11-14 10:37:29', 0);
+INSERT INTO `t_link` VALUES (6, 1, '网站名称', 'http://www.example.com', '这是一个示例网站', 'http://cdn.hedx.lielfw.cn/articleCover/21676717033297579.jpg', 1, 'example@example.com', '2024-11-14 10:56:16', '2024-11-14 10:56:16', 0);
+INSERT INTO `t_link` VALUES (8, 1, '网站名称', 'http://www.example.com', '这是一个示例网站', 'http://cdn.hedx.lielfw.cn/articleCover/Sara11676693097117968.png', 1, 'example@example.com', '2024-11-14 10:57:50', '2024-11-14 10:57:50', 0);
+INSERT INTO `t_link` VALUES (18, 1, '无语小站', '  http://localhost:99/', '无语小站无语小站', 'http://cdn.hedx.lielfw.cn/articleCover/21676717033297579.jpg', 1, '3490223402@qq.com', '2024-01-22 21:55:08', '2024-01-22 21:55:36', 0);
 
 -- ----------------------------
 -- Table structure for t_tag
@@ -1029,11 +1029,11 @@ CREATE TABLE `t_tag`  (
 -- ----------------------------
 -- Records of t_tag
 -- ----------------------------
-INSERT INTO `t_tag` VALUES (1, 'java', '2023-10-15 02:02:28', '2023-10-15 02:02:30', 0);
-INSERT INTO `t_tag` VALUES (2, 'python', '2023-10-15 02:02:53', '2023-10-15 02:02:55', 0);
-INSERT INTO `t_tag` VALUES (3, 'c#', '2023-10-15 02:03:06', '2023-10-15 02:03:09', 0);
-INSERT INTO `t_tag` VALUES (4, 'c++', '2023-10-15 02:03:23', '2023-10-15 02:03:25', 0);
-INSERT INTO `t_tag` VALUES (5, '开心', '2023-10-15 23:17:19', '2023-10-15 23:17:22', 0);
+INSERT INTO `t_tag` VALUES (1, 'java', '2024-10-15 02:02:28', '2024-10-15 02:02:30', 0);
+INSERT INTO `t_tag` VALUES (2, 'python', '2024-10-15 02:02:53', '2024-10-15 02:02:55', 0);
+INSERT INTO `t_tag` VALUES (3, 'c#', '2024-10-15 02:03:06', '2024-10-15 02:03:09', 0);
+INSERT INTO `t_tag` VALUES (4, 'c++', '2024-10-15 02:03:23', '2024-10-15 02:03:25', 0);
+INSERT INTO `t_tag` VALUES (5, '开心', '2024-10-15 23:17:19', '2024-10-15 23:17:22', 0);
 
 -- ----------------------------
 -- Table structure for t_tree_hole
@@ -1053,9 +1053,9 @@ CREATE TABLE `t_tree_hole`  (
 -- ----------------------------
 -- Records of t_tree_hole
 -- ----------------------------
-INSERT INTO `t_tree_hole` VALUES (1, 1, '测试添加', 1, '2023-10-30 11:32:30', '2023-10-30 11:32:30', 0);
-INSERT INTO `t_tree_hole` VALUES (29, 1, '真的是服了！！', 1, '2023-10-30 16:41:15', '2023-10-30 16:41:15', 0);
-INSERT INTO `t_tree_hole` VALUES (30, 1, '记得一定要快乐啊！！', 1, '2023-10-30 16:41:57', '2024-01-19 21:31:21', 0);
+INSERT INTO `t_tree_hole` VALUES (1, 1, '测试添加', 1, '2024-10-30 11:32:30', '2024-10-30 11:32:30', 0);
+INSERT INTO `t_tree_hole` VALUES (29, 1, '真的是服了！！', 1, '2024-10-30 16:41:15', '2024-10-30 16:41:15', 0);
+INSERT INTO `t_tree_hole` VALUES (30, 1, '记得一定要快乐啊！！', 1, '2024-10-30 16:41:57', '2024-01-19 21:31:21', 0);
 INSERT INTO `t_tree_hole` VALUES (34, 1, '天天开心', 1, '2024-01-19 21:33:24', '2024-01-19 21:33:24', 0);
 
 SET FOREIGN_KEY_CHECKS = 1;
