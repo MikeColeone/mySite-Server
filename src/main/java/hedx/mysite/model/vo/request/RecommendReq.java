@@ -9,7 +9,7 @@ import javax.validation.constraints.NotNull;
 /**
  * 推荐Request
  *
- * @author ican
+ * @author Mike
  **/
 @Data
 @ApiModel(description = "推荐Request")

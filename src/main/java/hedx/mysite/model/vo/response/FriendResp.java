@@ -7,7 +7,7 @@ import lombok.Data;
 /**
  * 友链Response
  *
- * @author ican
+ * @author Mike
  **/
 @Data
 @ApiModel(description = "友链Response")

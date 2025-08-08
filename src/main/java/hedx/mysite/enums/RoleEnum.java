@@ -1,4 +1,4 @@
-package com.ican.enums;
+package hedx.mysite.enums;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -6,7 +6,7 @@ import lombok.Getter;
 /**
  * 角色枚举
  *
- * @author ican
+ * @author Mike
  */
 @Getter
 @AllArgsConstructor

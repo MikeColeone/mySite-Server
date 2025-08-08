@@ -1,9 +1,9 @@
-package com.ican.enums;
+package hedx.mysite.enums;
 
 /**
  * 脱敏策略枚举
  *
- * @author ican
+ * @author Mike
  * @date 2024/01/14 16:04
  **/
 public enum DesensitizationTypeEnum {

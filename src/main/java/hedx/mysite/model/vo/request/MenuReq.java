@@ -10,7 +10,7 @@ import javax.validation.constraints.NotNull;
 /**
  * 菜单Request
  *
- * @author ican
+ * @author Mike
  * @date 2022/12/08 11:57
  **/
 @Data

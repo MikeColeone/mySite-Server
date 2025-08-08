@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 /**
  * 网站配置
  *
- * @author ican
+ * @author Mike
  */
 @Data
 public class SiteConfig {

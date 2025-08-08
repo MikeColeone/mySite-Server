@@ -7,7 +7,7 @@ import lombok.Data;
 /**
  * 后台照片Response
  *
- * @author ican
+ * @author Mike
  * @date 2022/12/30 20:56
  **/
 @Data

@@ -8,7 +8,7 @@ import lombok.Data;
 /**
  * 第三方token
  *
- * @author ican
+ * @author Mike
  */
 @Data
 @Builder

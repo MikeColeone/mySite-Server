@@ -10,7 +10,7 @@ import java.time.LocalDateTime;
 /**
  * 相册
  *
- * @author ican
+ * @author Mike
  */
 @Data
 @NoArgsConstructor
@@ -51,5 +51,4 @@ public class Album {
      * 更新时间
      */
     private LocalDateTime updateTime;
-
 }

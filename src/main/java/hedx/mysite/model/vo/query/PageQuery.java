@@ -8,7 +8,7 @@ import lombok.Data;
 /**
  * 分页查询条件
  *
- * @author ican
+ * @author Mike
  * @date 2023/07/29 16:20
  **/
 @Data
